@@ -49,7 +49,7 @@ var createTaskEl = function (taskDataObj) {
   var taskInfoEl = document.createElement("div");
   taskInfoEl.className = "task-info";
 
-  // console.log(taskDataObj.name)
+  console.log(taskDataObj.name);
 
   // add HTML content to div
   taskInfoEl.innerHTML =
@@ -59,6 +59,8 @@ var createTaskEl = function (taskDataObj) {
     taskDataObj.type +
     "</span>";
   listItemEl.appendChild(taskInfoEl);
+
+  console.log(taskInfoEl.innerHTML);
 
   var taskActionsEl = createTaskAction(taskIdCounter);
   listItemEl.appendChild(taskActionsEl);
